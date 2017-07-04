@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Shooting</title>
+<script src = "game.js"></script>
+<link rel="stylesheet" href="game.css"> 
+</head>
+
+<body>
+
+
+<h1 id ="setari"> Shooting Hero</h1>
+<p id="ceas"></p>
+
+<fieldset id="f1">
+<legend>Nume: </legend>
+<p> <input  type="text" id="nume" name="nume" value="Introduceti nume "> </p>
+</fieldset>
+
+<fieldset id="f2"> 
+<legend>Dificultate: </legend>
+<p><select id="dificultate" name="dificultate" multiple>
+  <option value="usor">Usor</option>
+  <option value="mediu" selected>Mediu</option>
+  <option value="greu">Greu</option>
+</select>
+</p>
+</fieldset>
+
+<fieldset id = "f3">
+  <legend >Genul: </legend>
+  <p><label> <input type="radio" id = "rb" name="gen" value="masculin" checked> Masculin </label></p>
+  <p><label> <input type="radio" id = "rf" name="gen"  value="feminin" > Feminin </label></p>
+</fieldset>
+
+<fieldset id = "f4">
+  <legend>Culoare Erou: </legend>
+  <p><label> <input type="checkbox" id="yellow" name="yellow" value="yellow"> Galben </label></p>
+  <p><label> <input type="checkbox" id="red" name="red" value="red" checked> Rosu </label></p>
+  <p><label> <input type="checkbox" id="grey" name="grey" value="grey" > Gri </label></p>
+</fieldset>
+
+<p id = "c1">
+<canvas id="canvas" width="200" height="200">
+</p>
+
+<form id="base">
+<button id ="refresh">Refresh</button>
+</form>
+
+<button id="show">? Ajutor</button>
+<button id="close">? Inchide</button>
+
+
+<div id ="background"></div>
+<div id ="hero"> &nbsp |</div>
+<div id = "laser"></div>
+<div id = "score"></div>
+<div id = "accesari"></div>
+<div id = "likes"></div>
+<div id = "dislikes"></div>
+<div id = "gameover">GAME OVER !</div>
+<div id = "afis"></div>
+<p id = "apreciere">Ti-a placut? </p>
+<div id="divapreciere" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+<img id="drag1" src="like.jpg" draggable="true" ondragstart="drag(event)" >
+<img id="drag2" src="dislike.jpg" draggable="true" ondragstart="drag(event)">
+
+<button id="again"> Play Again </button>
+
+
+
+</body>
+
+
+</html>
